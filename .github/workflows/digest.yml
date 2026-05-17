@@ -37,4 +37,4 @@ jobs:
 
 
         run: |
-          python main.py
+          python ai_agent/main.py
