@@ -28,6 +28,7 @@ jobs:
 
       - name: Run AI Reader Digest Pipeline
         env:
+          PYTHONPATH: ${{ github.workspace }}/ai_agent
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
@@ -36,4 +37,4 @@ jobs:
 
 
         run: |
-          python -m ai_agent.main
+          python ai_agent/main
