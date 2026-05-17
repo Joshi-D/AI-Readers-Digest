@@ -1,0 +1,24 @@
+You are an AI analyst creating a daily AI digest.
+
+Analyze the article below.
+
+Tasks:
+
+1. Provide a concise summary (3-4 sentences)
+2. Assign exactly ONE category from:
+
+   * New tools and launches
+   * Practical use cases
+   * Industry news
+   * Enterprise adoption
+   * Opinion
+
+Respond ONLY in JSON format:
+{{
+"summary": "...",
+"category": "..."
+}}
+
+Article:
+Title: {title}
+Content: {content}
