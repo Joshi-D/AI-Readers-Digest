@@ -1,5 +1,4 @@
 name: AI Reader Digest
-working-directory: ./ai_agent
 
 on:
   schedule:
@@ -12,10 +11,6 @@ on:
 jobs:
   run-digest:
     runs-on: ubuntu-latest
-
-    defaults: 
-      run: 
-        working-directory: ./ai_agent
 
     steps:
       - name: Checkout repository
@@ -42,4 +37,5 @@ jobs:
 
 
         run: |
+          cd ai_agent
           python ai_agent/main.py
